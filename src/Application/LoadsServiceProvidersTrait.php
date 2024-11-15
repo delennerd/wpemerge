@@ -109,6 +109,6 @@ trait LoadsServiceProvidersTrait {
 			$provider->bootstrap( $container );
 		}
 
-		do_action( 's' );
+		do_action( 'wpemerge.providers.bootstraped' );
 	}
 }
