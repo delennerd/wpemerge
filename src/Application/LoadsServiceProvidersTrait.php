@@ -93,6 +93,8 @@ trait LoadsServiceProvidersTrait {
 		foreach ( $service_providers as $provider ) {
 			$provider->register( $container );
 		}
+
+		do_action( 'wpemerge.providers.registered' );
 	}
 
 	/**
@@ -106,5 +108,7 @@ trait LoadsServiceProvidersTrait {
 		foreach ( $service_providers as $provider ) {
 			$provider->bootstrap( $container );
 		}
+
+		do_action( 's' );
 	}
 }
